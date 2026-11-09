@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body { @apply bg-mist font-sans text-sm text-ink antialiased; line-height: 1.5; }
+  h1, h2, h3 { @apply font-display; letter-spacing: -0.015em; }
+  :focus-visible { outline: 2px solid #0e7c7b; outline-offset: 2px; border-radius: 6px; }
+  ::selection { background: #e3f5f3; color: #0b2a30; }
+  input[type='checkbox'], input[type='radio'] { accent-color: #0e7c7b; }
+}
